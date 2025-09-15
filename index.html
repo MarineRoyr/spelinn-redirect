@@ -6,26 +6,26 @@
     <title>Redirection Spelinn → Slash Interim</title>
     <style>
         /* Styles globaux */
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f5f5f5; /* fond clair */
-            color: #b5b26a; /* couleur texte similaire à l'image */
+        html, body {
+            height: 100%;
             margin: 0;
             padding: 0;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            min-height: 100vh;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            color: #b5b26a;
         }
 
         /* Conteneur principal */
         .container {
+            margin: 50px auto;
             text-align: center;
-            max-width: 1000px;
-            width: 90%; /* pour s'adapter aux petits écrans */
-            padding: 40px 20px;
-            background-color: #ffffff; /* optionnel : pour faire ressortir le bloc */
+            max-width: 1200px; /* plus large sur grands écrans */
+            width: 90%;        /* responsive */
+            padding: 60px 40px;
+            background-color: #ffffff;
             border-radius: 12px;
             box-shadow: 0 4px 12px rgba(0,0,0,0.1);
         }
@@ -33,27 +33,25 @@
         /* Image centrée et responsive */
         .container img {
             display: block;
-            margin: 0 auto 30px auto; /* centrage et marge inférieure */
+            margin: 0 auto 30px auto;
             max-width: 100%;
             height: auto;
-            border-radius: 8px; /* optionnel, coins arrondis */
+            border-radius: 8px;
         }
 
         /* Texte explicatif */
         .description {
-            font-size: 2rem;
+            font-size: 2.5rem; /* grand sur grands écrans */
             line-height: 1.6;
             margin-bottom: 30px;
         }
 
-        /* Contact */
         /* Contact */
         .contact {
             margin-top: 20px;
             font-style: italic;
         }
 
-        /* Lien contact en moutarde et gras */
         .contact a {
             color: #b5b26a;
             font-weight: bold;
@@ -63,65 +61,64 @@
         .contact a:hover {
             text-decoration: underline;
         }
+
         /* Bouton CTA */
         .cta-button {
             display: inline-block;
             text-decoration: none;
-            background-color: #e6de4d; /* jaune similaire à l'image */
-            color: #ffffff; /* texte blanc sur le bouton */
+            background-color: #e6de4d;
+            color: #ffffff;
             font-weight: bold;
-            padding: 15px 30px;
+            padding: 20px 40px;
             border-radius: 25px;
-            font-size: 3rem;
+            font-size: 2rem;
             transition: background-color 0.3s ease;
             margin-top: 20px;
         }
 
         .cta-button:hover {
-            background-color: #d8ca42; /* léger changement au survol */
+            background-color: #d8ca42;
         }
 
         /* Media queries pour tablette et mobile */
         @media (max-width: 1024px) {
-    .description {
-        font-size: 1rem;
-    }
-    .cta-button {
-        padding: 14px 28px;
-        font-size: 1rem;
-    }
-}
+            .description {
+                font-size: 1.8rem;
+            }
+            .cta-button {
+                font-size: 1.5rem;
+                padding: 18px 35px;
+            }
+        }
 
-/* Pour mobiles */
-@media (max-width: 768px) {
-    .container {
-        padding: 30px 15px;
-    }
-    .description {
-        font-size: 0.95rem;
-    }
-    .cta-button {
-        padding: 12px 25px;
-        font-size: 0.95rem;
-    }
-}
+        @media (max-width: 768px) {
+            .container {
+                padding: 40px 20px;
+            }
+            .description {
+                font-size: 1.5rem;
+            }
+            .cta-button {
+                font-size: 1.2rem;
+                padding: 14px 28px;
+            }
+        }
 
-@media (max-width: 480px) {
-    .container {
-        padding: 20px 10px;
-    }
-    .description {
-        font-size: 0.9rem;
-    }
-    .cta-button {
-        padding: 10px 20px;
-        font-size: 0.9rem;
-    }
-}
+        @media (max-width: 480px) {
+            .container {
+                padding: 30px 10px;
+            }
+            .description {
+                font-size: 1.2rem;
+            }
+            .cta-button {
+                font-size: 1rem;
+                padding: 12px 25px;
+            }
+        }
     </style>
 </head>
 <body>
-    <!-- Conteneur principal -->
     <div class="container">
         <!-- Image centrée -->
         <img src="association.jpg" alt="Association Spelinn">
