@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redirection Spelinn → Slash Interim</title>
+    <style>
+        /* Styles globaux */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5; /* fond clair */
+            color: #b5b26a; /* couleur texte similaire à l'image */
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+        }
+
+        /* Conteneur principal */
+        .container {
+            text-align: center;
+            max-width: 600px;
+            width: 90%; /* pour s'adapter aux petits écrans */
+            padding: 40px 20px;
+            background-color: #ffffff; /* optionnel : pour faire ressortir le bloc */
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+
+        /* Image centrée et responsive */
+        .container img {
+            display: block;
+            margin: 0 auto 30px auto; /* centrage et marge inférieure */
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px; /* optionnel, coins arrondis */
+        }
+
+        /* Texte explicatif */
+        .description {
+            font-size: 1rem;
+            line-height: 1.6;
+            margin-bottom: 30px;
+        }
+
+        /* Contact */
+        /* Contact */
+        .contact {
+            margin-top: 20px;
+            font-style: italic;
+        }
+
+        /* Lien contact en moutarde et gras */
+        .contact a {
+            color: #b5b26a;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        .contact a:hover {
+            text-decoration: underline;
+        }
+        /* Bouton CTA */
+        .cta-button {
+            display: inline-block;
+            text-decoration: none;
+            background-color: #e6de4d; /* jaune similaire à l'image */
+            color: #ffffff; /* texte blanc sur le bouton */
+            font-weight: bold;
+            padding: 15px 30px;
+            border-radius: 25px;
+            font-size: 1rem;
+            transition: background-color 0.3s ease;
+            margin-top: 20px;
+        }
+
+        .cta-button:hover {
+            background-color: #d8ca42; /* léger changement au survol */
+        }
+
+        /* Media queries pour tablette et mobile */
+        @media (max-width: 768px) {
+            .container {
+                padding: 30px 15px;
+            }
+            .description {
+                font-size: 0.95rem;
+            }
+            .cta-button {
+                padding: 12px 25px;
+                font-size: 0.95rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .container {
+                padding: 20px 10px;
+            }
+            .description {
+                font-size: 0.9rem;
+            }
+            .cta-button {
+                padding: 10px 20px;
+                font-size: 0.9rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Conteneur principal -->
+    <div class="container">
+        <!-- Image centrée -->
+        <img src="association.jpg" alt="Association Spelinn">
+
+        <!-- Texte explicatif -->
+        <p class="description">
+            Toutes nos offres d'emploi, conseils et services sont désormais accessibles<br>
+            sur le site de Slash Interim.<br>
+            Retrouvez votre agence habituelle ainsi que notre nouvelle équipe<br>
+            dès aujourd'hui !
+        </p>
+
+        <!-- Contact Spelinn -->
+        <p class="contact">
+            Vous pouvez nous joindre sur <a href="mailto:contact@spelinn.com">contact@spelinn.com</a> ou au 09.54.88.13.94
+        </p>
+
+        <!-- Bouton CTA -->
+        <a class="cta-button" href="https://www.slash-interim.com/" target="_blank">
+            DECOUVRIR SLASH INTERIM →
+        </a>
+    </div>
+</body>
+</html>
